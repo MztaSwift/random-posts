@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success</title>
+</head>
+<body>
+    <h1>Post Fetched Successfully</h1>
+    <h2>Saved Posts:</h2>
+    <ul>
+        {% for post in posts %}
+            <li>{{ post.title }} - {{ post.body }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Fetch Another Post</a>
+</body>
+</html>
